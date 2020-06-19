@@ -34,4 +34,9 @@
     <ProjectReference Include="..\CarRental.Web.Infrastructure\CarRental.Web.Infrastructure.csproj" />
     <ProjectReference Include="..\CarRental.Web.ViewModels\CarRental.Web.ViewModels.csproj" />
   </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Views\Contact\" />
+    <Folder Include="Views\Destination\" />
+  </ItemGroup>
 </Project>
