@@ -1,0 +1,22 @@
+﻿@using CarRental.Common
+@model CarRental.Web.ViewModels.Home.IndexViewModel
+@{
+    this.ViewData["Title"] = "Home Page";
+}
+<div class="container">
+    <style>
+        body {
+            background-image: url(/images/car-rental-wallpaper.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+    </style>
+
+    <div class="text-center">
+        <h1 class="display-4 text-shadow" style="color:gold"><b>Start your journey with ElisCar!</b></h1>
+        <p class="big">
+        </p>
+        <a asp-controller="TransferReservation" class="btn btn-outline-dark button-circle"><b>Transfer Reservation</b></a>
+        <a asp-controller="CarReservation" class="btn btn-outline-dark button-circle"><b>Car Reservation</b></a>
+    </div>
+</div>

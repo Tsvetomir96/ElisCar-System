@@ -1,0 +1,344 @@
+﻿@using CarRental.Common
+@model CarRental.Web.ViewModels.TransferReservation.SendTransferInformationViewModel
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td, th {
+            border: 2px solid black;
+            text-align: left;
+            padding: 2px;
+        }
+
+        tr {
+            background-color: gold;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>From: Destination</th>
+            <th>To: Destination</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <td>Airport Varna</td>
+            <td>Albena</td>
+            <td>25€</td>
+        </tr>
+        <tr>
+            <td>Airport Varna</td>
+            <td>Balchik</td>
+            <td>30€</td>
+        </tr>
+        <tr>
+            <td>Airport Varna</td>
+            <td>Bucuresti(Romania)</td>
+            <td>170€</td>
+        </tr>
+        <tr>
+            <td>Airport Varna</td>
+            <td>Bourgas</td>
+            <td>75€</td>
+        </tr>
+        <tr>
+            <td>Airport Varna</td>
+            <td>Bourgas Airport</td>
+            <td>70€</td>
+        </tr>
+        <tr>
+            <td>Airport Varna</td>
+            <td>Bliznatsi</td>
+            <td>20€</td>
+        </tr>
+        <tr>
+            <td>Airport Varna</td>
+            <td>Byala</td>
+            <td>30€</td>
+        </tr>
+        <tr>
+            <td>Airport Varna</td>
+            <td>Costinesti(Romania)</td>
+            <td>100€</td>
+        </tr>
+        <tr>
+            <td>Airport Varna</td>
+            <td>Constanta(Romania)</td>
+            <td>120€</td>
+        </tr>
+        <tr>
+            <td>Airport Varna</td>
+            <td>Chernomorets</td>
+            <td>80€</td>
+        </tr>
+        <tr>
+            <td>Airport Varna</td>
+            <td>Dobrich</td>
+            <td>20€</td>
+        </tr>
+        <tr>
+            <td>Airport Varna</td>
+            <td>Devnya</td>
+            <td>20€</td>
+        </tr>
+        <tr>
+            <td>Airport Varna</td>
+            <td>Golden Sands</td>
+            <td>20€</td>
+        </tr>
+        <tr>
+            <td>Airport Varna</td>
+            <td>Kranevo</td>
+            <td>25€</td>
+        </tr>
+        <tr>
+            <td>Airport Varna</td>
+            <td>Kavarna</td>
+            <td>40€</td>
+        </tr>
+        <tr>
+            <td>Airport Varna</td>
+            <td>Kiten</td>
+            <td>150€</td>
+        </tr>
+        <tr>
+            <td>Airport Varna</td>
+            <td>Lighthouse Golf & Spa Resort</td>
+            <td>40€</td>
+        </tr>
+        <tr>
+            <td>Airport Varna</td>
+            <td>Mangalia(Romania)</td>
+            <td>80€</td>
+        </tr>
+        <tr>
+            <td>Airport Varna</td>
+            <td>Nesebar</td>
+            <td>65€</td>
+        </tr>
+        <tr>
+            <td>Airport Varna</td>
+            <td>Obzor</td>
+            <td>30€</td>
+        </tr>
+        <tr>
+            <td>Airport Varna</td>
+            <td>Plovdiv</td>
+            <td>200€</td>
+        </tr>
+        <tr>
+            <td>Airport Varna</td>
+            <td>Pomorie</td>
+            <td>70€</td>
+        </tr>
+        <tr>
+            <td>Airport Varna</td>
+            <td>Primorsko</td>
+            <td>90€</td>
+        </tr>
+        <tr>
+            <td>Airport Varna</td>
+            <td>Ravda</td>
+            <td>65€</td>
+        </tr>
+        <tr>
+            <td>Airport Varna</td>
+            <td>Ruse</td>
+            <td>100€</td>
+        </tr>
+        <tr>
+            <td>Airport Varna</td>
+            <td>Sv.Constantin and Elena</td>
+            <td>15€</td>
+        </tr>
+        <tr>
+            <td>Airport Varna</td>
+            <td>Shabla</td>
+            <td>80€</td>
+        </tr>
+        <tr>
+            <td>Airport Varna</td>
+            <td>Shumen</td>
+            <td>60€</td>
+        </tr>
+        <tr>
+            <td>Airport Varna</td>
+            <td>Sofia</td>
+            <td>220€</td>
+        </tr>
+        <tr>
+            <td>Airport Varna</td>
+            <td>Shkorpilovtsi</td>
+            <td>25€</td>
+        </tr>
+        <tr>
+            <td>Airport Varna</td>
+            <td>Sunny Beach</td>
+            <td>60€</td>
+        </tr>
+        <tr>
+            <td>Airport Varna</td>
+            <td>Sveti Vlas</td>
+            <td>65€</td>
+        </tr>
+        <tr>
+            <td>Airport Varna</td>
+            <td>Sozopol</td>
+            <td>80€</td>
+        </tr>
+        <tr>
+            <td>Airport Varna</td>
+            <td>Varna Center</td>
+            <td>10€</td>
+        </tr>
+        <tr>
+            <td>Airport Varna</td>
+            <td>Veliko Tarnovo</td>
+            <td>120€</td>
+        </tr>
+    </table>
+    <p></p>
+    <h2 style="text-align: left;">Contact with us</h2>
+    <p>If you are interested in routes that are not described in the price list, other questions or to book a transfer, do not hesitate to contact us by phone <b>+359 893997896</b> or by filling out the contact form.</p>
+    <form asp-action="TransferReservationForm">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label asp-for="Name"><b>Name *:</b></label>
+                <input asp-for="Name" type="text" class="form-control" required>
+            </div>
+            <div class="form-group col-md-6">
+                <label asp-for="Email"><b>Email *:</b></label>
+                <input asp-for="Email" type="email" class="form-control" required>
+            </div>
+            <div class="form-group col-md-6">
+                <label asp-for="PhoneNumber"><b>Phone Number *:</b></label>
+                <input asp-for="PhoneNumber" type="text" class="form-control" required>
+            </div>
+            <div class="form-group col-md-6">
+                <label asp-for="NumberOfPersons"><b>Number of persons *:</b></label>
+                <select asp-items="new List<SelectListItem>()" class="form-control" required>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="FromDestination"><b>From: Destination</b></label>
+            <select asp-items="new List<SelectListItem>()" class="form-control">
+                <option selected>Airport Varna</option>
+                <option>Airport Bourgas</option>
+                <option>Albena</option>
+                <option>Balchik</option>
+                <option>Bucuresti(Romania)</option>
+                <option>Bourgas</option>
+                <option>Bliznatsi</option>
+                <option>Byala</option>
+                <option>Costinesti(Romania)</option>
+                <option>Constanta(Romania)</option>
+                <option>Chernomorets</option>
+                <option>Dobrich</option>
+                <option>Devnya</option>
+                <option>Golden Sands</option>
+                <option>Kranevo</option>
+                <option>Kavarna</option>
+                <option>Kiten</option>
+                <option>Lighthouse Golf & Spa Resort</option>
+                <option>Mangalia(Romania)</option>
+                <option>Nesebar</option>
+                <option>Obzor</option>
+                <option>Plovdiv</option>
+                <option>Pomorie</option>
+                <option>Primorsko</option>
+                <option>Ravda</option>
+                <option>Ruse</option>
+                <option>Sv.Constantin and Elena</option>
+                <option>Shabla</option>
+                <option>Shumen</option>
+                <option>Sofia</option>
+                <option>Shkorpilovtsi</option>
+                <option>Sunny Beach</option>
+                <option>Sveti Vlas</option>
+                <option>Sozopol</option>
+                <option>Varna Center</option>
+                <option>Veliko Tarnovo</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label asp-for="ToDestination"><b>To: Destination</b></label>
+            <select asp-items="new List<SelectListItem>()" class="form-control">
+                <option>Airport Varna</option>
+                <option>Airport Bourgas</option>
+                <option>Albena</option>
+                <option>Balchik</option>
+                <option>Bucuresti(Romania)</option>
+                <option>Bourgas</option>
+                <option>Bliznatsi</option>
+                <option>Byala</option>
+                <option>Costinesti(Romania)</option>
+                <option>Constanta(Romania)</option>
+                <option>Chernomorets</option>
+                <option>Dobrich</option>
+                <option>Devnya</option>
+                <option>Golden Sands</option>
+                <option>Kranevo</option>
+                <option>Kavarna</option>
+                <option>Kiten</option>
+                <option>Lighthouse Golf & Spa Resort</option>
+                <option>Mangalia(Romania)</option>
+                <option>Nesebar</option>
+                <option>Obzor</option>
+                <option>Plovdiv</option>
+                <option>Pomorie</option>
+                <option>Primorsko</option>
+                <option>Ravda</option>
+                <option>Ruse</option>
+                <option>Sv.Constantin and Elena</option>
+                <option>Shabla</option>
+                <option>Shumen</option>
+                <option>Sofia</option>
+                <option>Shkorpilovtsi</option>
+                <option>Sunny Beach</option>
+                <option>Sveti Vlas</option>
+                <option>Sozopol</option>
+                <option>Varna Center</option>
+                <option>Veliko Tarnovo</option>
+            </select>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label asp-for="Address"><b>Address/Hotel/Flight Number *:</b></label>
+                <input asp-for="Address" type="text" class="form-control" placeholder="Your information about the pick up" required>
+            </div>
+            <div class="form-group col-md-4">
+                <label asp-for="Date"><b>Date</b></label>
+                <input asp-for="Date" type="date" class="form-control">
+            </div>
+            <div class="form-group col-md-2">
+                <label asp-for="Time"><b>Time</b></label>
+                <input asp-for="Time" type="time" class="form-control">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="form-group">
+                <label asp-for="Comment"><b>Comment:</b></label>
+                <textarea asp-for="Comment" type="text" class="form-control" rows="10"></textarea>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Send</button>
+        <h3>@ViewBag.message</h3>
+    </form>
+</body>
+</html>

@@ -1,0 +1,109 @@
+﻿@using CarRental.Common
+@model CarRental.Web.ViewModels.CarReservation.CarModelViewModel
+@{
+    this.ViewData["Title"] = "Cars";
+}
+
+    <div class="card-columns" style="width: auto">
+        @foreach (var details in Model.CarsModels)
+        {
+            <div class="card2 card" style="width: 18rem;">
+                <img src="@details.CarImage" class="card-img-top" width="500" height="200">
+                <div class="card-body">
+                    <h5 class="card-title text-center">@details.CarModel</h5>
+                    @if (details.CarModel == "Volkswagen Golf")
+                    {
+                        <p class="card-text text-left">
+                            <b><small>🚘 5 doors</small></b>
+                            <b><small>💼 small</small></b>
+                        </p>
+                        <p class="card-text text-left">
+                            <b><small>⛽️ diesel</small></b>
+                            <b><small>🕹 manual</small></b>
+                        </p>
+                        <p class="card-text text-left">
+                            <b><small>🕴 5 places</small></b>
+                            <b><small>❄ A/C</small></b>
+                        </p>
+                    }
+                    @if (details.CarModel == "Kia Rio")
+                    {
+                        <p class="card-text text-left">
+                            <b><small>🚘 5 doors</small></b>
+                            <b><small>💼 medium</small></b>
+                        </p>
+                        <p class="card-text text-left">
+                            <b><small>⛽️ petrol</small></b>
+                            <b><small>🕹 automatic</small></b>
+                        </p>
+                        <p class="card-text text-left">
+                            <b><small>🕴 5 places</small></b>
+                            <b><small>❄ A/C</small></b>
+                        </p>
+                    }
+                    @if (details.CarModel == "Ford Fiesta")
+                    {
+                        <p class="card-text text-left">
+                            <b><small>🚘 5 doors</small></b>
+                            <b><small>💼 small</small></b>
+                        </p>
+                        <p class="card-text text-left">
+                            <b><small>⛽️ petrol</small></b>
+                            <b><small>🕹 manual</small></b>
+                        </p>
+                        <p class="card-text text-left">
+                            <b><small>🕴 5 places</small></b>
+                            <b><small>❄ A/C</small></b>
+                        </p>
+                    }
+                    @if (details.CarModel == "Renault Clio")
+                    {
+                        <p class="card-text text-left">
+                            <b><small>🚘 3 doors</small></b>
+                            <b><small>💼 small</small></b>
+                        </p>
+                        <p class="card-text text-left">
+                            <b><small>⛽️ diesel</small></b>
+                            <b><small>🕹 manual</small></b>
+                        </p>
+                        <p class="card-text text-left">
+                            <b><small>🕴 4 places</small></b>
+                            <b><small>❄ A/C</small></b>
+                        </p>
+                    }
+                    @if (details.CarModel == "Mercedes Vito")
+                    {
+                        <p class="card-text text-left">
+                            <b><small>🚘 5 doors</small></b>
+                            <b><small>💼 large</small></b>
+                        </p>
+                        <p class="card-text text-left">
+                            <b><small>⛽️ diesel</small></b>
+                            <b><small>🕹 automatic</small></b>
+                        </p>
+                        <p class="card-text text-left">
+                            <b><small>🕴 8 places</small></b>
+                            <b><small>❄ A/C</small></b>
+                        </p>
+                    }
+                    @if (details.CarModel == "Suzuki Ertiga")
+                    {
+                        <p class="card-text text-left">
+                            <b><small>🚘 5 doors</small></b>
+                            <b><small>💼 big</small></b>
+                        </p>
+                        <p class="card-text text-left">
+                            <b><small>⛽️ diesel</small></b>
+                            <b><small>🕹 manual</small></b>
+                        </p>
+                        <p class="card-text text-left">
+                            <b><small>🕴 7 places</small></b>
+                            <b><small>❄ A/C</small></b>
+                        </p>
+                    }
+                    <p class="medium"></p>
+                    <a href="#" class="btn btn-outline-secondary button-getinfo"><b>Take it ➠</b></a>
+                </div>
+            </div>
+        }
+    </div>
