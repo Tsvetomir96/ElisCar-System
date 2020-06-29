@@ -15,5 +15,10 @@
         {
             return Task.CompletedTask;
         }
+
+        public Task SendEmailAsync(string email, string v1, string v2)
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

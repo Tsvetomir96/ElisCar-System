@@ -1,16 +1,10 @@
-﻿using Microsoft.Extensions.Hosting;
-
-namespace CarRental.Web.Controllers
+﻿namespace CarRental.Web.Controllers
 {
     using System;
-    using System.Collections.Generic;
-    using System.Linq;
     using System.Net.Mail;
-    using System.Threading.Tasks;
 
     using CarRental.Web.ViewModels.TransferReservation;
     using Microsoft.AspNetCore.Mvc;
-    using SendGrid.Helpers.Mail;
 
     public class TransferReservation : BaseController
     {
@@ -47,7 +41,6 @@ namespace CarRental.Web.Controllers
             mm.IsBodyHtml = false;
             SmtpClient smtp = new SmtpClient("imap.gmail.com");
             smtp.Port = Convert.ToInt32(587);
-            //smtp.Host = "imap.gmail.com";
             smtp.UseDefaultCredentials = false;
             smtp.EnableSsl = Convert.ToBoolean(true);
             smtp.Credentials = new System.Net.NetworkCredential("eliscarbulgaria@gmail.com", "mastersan12!");
